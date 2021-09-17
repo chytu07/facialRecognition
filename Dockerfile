@@ -1,5 +1,5 @@
-FROM jjanzic/docker-python3-opencv:latest
+FROM jhonatans01/python-dlib-opencv:latest
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
-CMD ["python","main.py"]
+RUN pip3 install -r requirements.txt
+CMD ["python3","app.py"]
